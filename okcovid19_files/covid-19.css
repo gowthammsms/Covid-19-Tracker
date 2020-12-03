@@ -1,0 +1,503 @@
+body,html{margin:0;padding:0;box-sizing:border-box;font-family: 'Open Sans', sans-serif;}
+ul,ol,li{list-style:none;margin:0;padding:0;background:none}    
+*{box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;outline:medium none;padding:0;text-decoration:none}    
+a{text-decoration: none;border: 0;outline: none; cursor: pointer; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a,a:hover,a:active,a:visited,a:focus{text-decoration: none;outline:none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+ul, ol, li{ list-style:none; margin:0; padding:0; background:none;}
+body,input,textarea,select,button{font-feature-settings:liga,kern;text-rendering:geometricPrecision;-webkit-text-size-adjust:none;-ms-overflow-style:scrollbar;-webkit-font-smoothing:antialiased;font-family:'Open Sans',sans-serif}
+body{max-width:1024px;margin:0 auto;border:1px solid #e4e4e4}
+.dn{display:none !important;}
+
+
+
+/*fonts css*/
+.font9{font-size:9px;}
+.font10{font-size:10px;}
+.font11{font-size:11px;}
+.font12{font-size:12px;}
+.font13{font-size:13px;}
+.font14{font-size:14px;}
+.font15{font-size:15px;}
+.font16{font-size:16px;}
+.font17{font-size:17px;}
+.font18{font-size:18px;}
+.font24{font-size:24px;}
+.font26{font-size:26px;}
+.font32{font-size:32px;}
+
+/*Header and Tabs Css*/
+.divider{width:100%;display:block;background:#e4eaef;height:1px;}
+.headerWrap{display:table;table-layout:fixed;width:100%;}
+.hdrLogoWpr {display: table-cell; vertical-align: middle; text-align: center; } 
+.hdrLogoIcn {width: 83px; height: 20px; display: inline-block; background: url(//akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/hpnwhdrlogoicn.svg) no-repeat; vertical-align: middle; background-size: 100%; }
+.iconWrap{display:table-cell;vertical-align:middle;height:52px;width:52px;}
+.midText{display:table-cell;vertical-align:middle;text-align:center;color:#414e5a;font-weight:600;padding-bottom:3px;}
+.backIcon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headerbkicn.svg) no-repeat;background-position:center;cursor: pointer;}
+.shareIcon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headershare.svg) no-repeat;background-position:center;cursor: pointer;}
+.scrollWrapper{display:block;white-space:nowrap;overflow-x:scroll;margin:0 0 10px 0}
+.scrolltab{margin:0;padding:0;}
+.scrolltab li{display:inline-block;margin:0;display:inline-block}
+.scrolltab li a{text-decoration:none;color:#4a4848;position:relative;padding:11px 13px 9px 13px;display:inline-block}
+.scrolltab li a.active{color:#00a8ff;    font-weight: 600;}
+.scrolltab li a.active::after{content:'';background:#00a8ff;height:2px;position:absolute;left:50%;bottom:0;width:28px;margin-left:-14px;}
+.scrollWrapper::-webkit-scrollbar{display:none}
+/*Header and Tabs Css End*/
+
+/*Do and Donts Css*/
+.hwtprev{  color: #414e5a; font-weight: 600;    padding: 10px 0 20px;}
+.dodontwpr{width:100%;display:block;padding:0 20px 70px;box-sizing:border-box;font-size:0;}
+.dodontlist{width:50%;display:inline-block;vertical-align:middle;color:#414e5a;text-align:center;border-bottom:1px solid #e4eaef;box-sizing:border-box;padding:20px 8px 20px 8px;}
+.dodontpara{margin:15px 0 0 0;line-height:20px;}
+.dodontlist:nth-child(even){border-right:1px solid #e4eaef;}
+.dodontlist:nth-of-type(2n+5),  .dodontlist:nth-of-type(2n+6){border-bottom:none;}
+.dodontlist .dodontbld{color:#0076d7;font-weight:600}
+.dodonticn{width:50px;height:50px;display:inline-block;background-repeat:no-repeat;background-position:center;}
+.ddwashicn{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/ddwashicn.svg);}
+.ddsneezeicn{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/ddsneezeicn.svg);}
+.ddscratchicn{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/ddscratchicn.svg);}
+.ddshampooicn{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/ddshampooicn.svg);}
+.ddhandshakeicn{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/ddhandshakeicn.svg);}
+.ddkeepdisticn{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/ddkeepdisticn.svg);}
+/*Do and Donts Css End*/
+
+/*news*/
+.newswrp{display:block;margin:20px 0;box-sizing:border-box}
+.newsfirstitmg{border-radius:6px;padding-bottom:0;object-fit:cover;width:100%;height:250px; object-position: top;}
+.newsfullscrdivd{position:relative;width:100%;display:block;font-size:0;box-sizing:border-box;padding:0 20px}
+.nwspubloi{width:100%;padding:20px;box-sizing:border-box}
+.publiicon{display:inline-block;height:19px;width:19px;vertical-align:middle;margin-right:6px}
+.pmbimg{width:100%;height:100%;border-radius:2px;object-fit:cover}
+.publnam{color:#363d43;font-weight:600}
+.newsh1{color:#1a1b1d;font-weight:600;line-height:1.4;box-sizing:border-box;padding:0 20px}
+.newscontli{display:table;width:100%;table-layout:fixed;border-bottom:1px solid #f2f2f2;box-sizing:border-box;padding:16px 20px}
+.newsconleft,.newsconright{display:table-cell}
+.newsconleft{color:#788898;display:inline-block;font-weight:400;text-align:left}
+.newsconright{text-align:right}
+.nwsshareic{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsjdshare.svg) no-repeat;width:22px;height:22px;background-size:80% auto;display:inline-block;vertical-align:middle;margin-right:24px;cursor:pointer;background-position:center}
+.newscovr{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot/jdsocial/fullcoverageicn.svg) no-repeat;width:22px;height:22px;background-size:80% auto;display:inline-block;vertical-align:middle;margin-right:24px;cursor:pointer;background-position:center}
+.nwjd3dots{vertical-align:middle;background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot/jdsocial/vertical3dots.svg) no-repeat;width:22px;height:22px;background-size:80% auto;display:inline-block;cursor:pointer;background-position:center}
+.newscomainli{display:table;width:100%;table-layout:fixed;box-sizing:border-box;padding:16px 20px 0}
+.newcomaright{display:table-cell;width:74px;vertical-align:middle}
+.newcomaleft{display:table-cell;vertical-align:top;padding-right:20px}
+.newsconpara{color:#1a1b1d;font-weight:600}
+.newcomaleft .nwspubloi{padding:10px 0}
+.sclnewsbgr{width:74px;height:74px;display:inline-block;background-size:cover;background-repeat:no-repeat;background-position:50%;border-radius:6px;vertical-align:middle}
+/*news*/
+
+/*==LAST UPDATES WRAPPER CSS==*/
+.wrappercov{width:100%;margin:0 auto;padding:10px 20px 20px}
+.lastupdate{color:#28a745;padding:5px 0 0;font-weight:700}
+.india_wrap{display:block;border-radius:5px;border:1px solid #f0f3f5}
+.india_hdr{width:100%;display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#414e5a;padding:10px 10px 10px 20px}
+.india_hdr select{width:100%;border:0;background:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdrpdwn.svg) no-repeat;background-position:right;-webkit-appearance:none}
+.india_bdy{display:block;border-top:1px solid #f2f2f2}
+.india_bdy ul li{width:49%;display:inline-block;text-align:center;color:#414e5a;font-size:0;padding:15px}
+.india_bdy ul li > span{width:100%;display:block}
+.colorff3d3d{color:#ff3d3d}
+.colorffb300{color:#ffb300}
+.color3dd642{color:#3dd642}
+.color78909c{color:#78909c}
+.fw600{font-weight:600}
+.wrapper.pt0{padding-top:0}
+.ibcr,.indiatxt{color:#414e5a}
+.arrow{width:20px;height:20px;background:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdrpdwn.svg) no-repeat;background-size:100% 100%;display:inline-block}
+/*==LAST UPDATES WRAPPER CSS==*/
+
+/*==STATW WISE WRAPPER CSS==*/
+.stboxWrapper{padding:20px}
+.stboxHeader{font-weight:600;color:#414e5a;padding:0 0 10px}
+.stboxul{border-bottom:#f2f2f2 solid 1px;padding:0 0 15px}
+.stboxli{display:table;table-layout:fixed;width:100%;padding:5px 0}
+.dtablcell{display:table-cell;vertical-align:middle}
+.tright{text-align:right}
+.stviewall{color:#0076d7;padding:15px 0 0;display:block}
+.stboxWrapper.pt0{padding-top:0}
+.stboxLeft{color:#788798}
+.stboxRight{color:#414e5a;font-weight:600}
+.globalwrap{padding:20px}
+.globalwrap.globalwrapex{padding:10px 20px}
+.gbrow{display:table;table-layout:fixed;width:100%;padding:5px 0}
+.gbfr{color:#414e5a}
+.gbdot{width:16px}
+.gblt{font-weight:600;color:#414e5a}
+.gblt.act{color:#da4f4f}
+.innergbdot{height:7px;width:7px;border-radius:50%;display:inline-block;vertical-align:middle}
+.confirmbg{background-color:#da4f4f}
+.activebg{background-color:#ffa000}
+.recoverbg{background-color:#8bc34a}
+.fetalbg{background-color:#78909c}
+/*==STATW WISE WRAPPER CSS==*/
+
+/*==GALLERY CSS==*/
+.listingcontainer{position:relative}
+.dtable{display:table;table-layout:fixed;width:100%}
+.dtablecell{display:table-cell;vertical-align:middle}
+.blockheader{padding:10px 20px 6px}
+.titleblock{color:#4a4848;font-weight:600}
+.listitemscroll{padding-bottom:0;position:relative}
+.listitemscroll ul{margin: 0; padding: 10px 0 17px; white-space: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; margin-bottom: 75px; overflow-y: hidden;} 
+.listitemscroll ul li{list-style-type:none;margin:0 8px;display:inline-block;border-radius:6px;vertical-align:top}
+.listitemscroll ul li a{display:block;border-radius:6px;position:relative;box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);text-decoration:none;width:100%}
+.listitemscroll ul li a img{height:100%;width:100%;border-radius:6px}
+.listitemscroll ul li:first-child{margin-left:20px}
+.listitemscroll:after{content:'';position:absolute;left:0;bottom:0;height:8px;background:#fff;width:100%}
+.overlay{height:80%;width:100%;position:absolute;bottom:0;left:0;background-image:linear-gradient(to bottom,rgba(0,0,0,0),#000);box-shadow:0 3px 6px 0 rgba(0,0,0,0.16);border-radius:0 0 6px 6px}
+.infoblock{position:absolute;bottom:0;left:0;width:100%;color:#fff;padding:12px;box-sizing:border-box;white-space:normal}
+.listitemscroll ul li:first-child{margin-left:20px}
+.listitemscroll ul li.socialblock{width:300px}
+.listitemscroll ul li.socialblock a{height:180px}
+.cardinfoblock{padding:12px 0 0;display:table;width:100%}
+.cardleft{font-weight:600;color:#363d43;display:table-cell;vertical-align:middle;text-align:left}
+.cardright{font-weight:400;color:#414e5a;display:table-cell;vertical-align:middle;text-align:right}
+.tvwalls{color:#0076d7}
+.glnewicon{height:15px;width:20px;background-repeat:no-repeat;display:inline-block;background-size:contain;position:relative;top:3px;margin:0 4px 0 0}
+.glshareicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headershare.svg) no-repeat;height:15px;width:15px;display:inline-block;background-size:contain;position:relative;top:4px;margin:0 4px 0 0}
+/*==GALLERY CSS==*/
+
+/*Symtoms Css*/
+.dtable{display:table;table-layout:fixed;width:100%}
+.dtablecell{display:table-cell;vertical-align:middle}
+.cvdanc{width:100%;display:block}
+.symtWrapper{padding:20px}
+.symtHeader{color:#414e5a;font-weight:600;margin:0 0 10px}
+.smytinfo{color:#414e5a;margin:0 0 10px}
+.smytinfoex{color:#414e5a}
+.helpinfo{color:#0076d7;font-weight:600;padding:20px 0}
+.emwrapper{padding-bottom:70px}
+.emwrapper h2{color:#414e5a;font-weight:600;margin:0 0 15px}
+.emwrapper ul{color:#414e5a;padding:0 0 0 18px}
+.emwrapper ul li{list-style-type:disc;padding:5px 0}
+.smtypes{border-bottom:#f2f2f2 solid 1px;margin:0 0 25px}
+.smtypes li{border-right:#f2f2f2 solid 1px;text-align:center;padding:10px 0 20px;vertical-align:top}
+.smtypes li:last-child{border-right:0}
+.smticnwrp{height:50px;width:50px;display:inline-block;margin:auto;background-repeat:no-repeat}
+.smText{color:#414e5a;font-weight:600;text-align:center;display:block}
+.cvdfever{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdfever.svg)}
+.cvdcough{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdcaugh.svg)}
+.cvdbreath{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdbreath.svg)}
+.cvdcallnowp{width:100%;display:table;table-layout:fixed;border-bottom:#f2f2f2 solid 1px;margin-bottom:20px}
+.cvdcallnowp .helpinfo,.cvdcallicnwp{display:table-cell;vertical-align:middle}
+.cvdcallicnwp{width:36px}
+.cvdcallicn{width:36px;height:36px;display:inline-block;cursor:pointer;border:1.5px solid #e5e5e5;border-radius:100%;background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdresultcall.svg);background-repeat:no-repeat;background-position:center}
+/*Symtoms Css*/
+
+/*sharepopup css*/
+.sharpopwp {top: 0; left: 0; width: 100%; height: 100%; position: fixed; background: rgba(0, 0, 0, .5); z-index: 8;}
+.sharepopup.dt {opacity: 1; bottom: 0; }
+.sharepopup {will-change: transition; bottom: -100%; width: 100%; background-color: #fff; position: fixed; right: 0; left: 0; opacity: 0; transition: all 300ms;}
+.sharetbWpr {position: relative; width: 100%; display: block; }
+.sharetitle {display: block; width: 100%; padding: 10px; font-size: 14px; color: #222; text-align: center; box-sizing: border-box; }
+.sharepopup ul {width: 100%; display: block; padding:15px 0; margin: 0; }
+.sharepopup ul li {display: block; width: 100%;box-sizing: border-box;text-align: left; }
+.sharepopup ul li a{color:#363d43;cursor:pointer;display:block;padding:10px 20px}
+.share_icon {    background-size: 100% auto;display: inline-block;height: 27px;margin-right: 12px;vertical-align: middle;width: 27px; }
+.fbsvg, .wtupsvg, .mailsvg, .twtsvg, .gplssvg, .smssvg {width: 18px; height: 18px; background-size: 18px auto; display: inline-block; vertical-align: middle; background-repeat: no-repeat; }
+.cancelbtn.dt {bottom: 8px; opacity: 1; }
+.cancelbtn {will-change: transition; bottom: -100%; position: fixed; left: 2%; width: 96%; background: #fff; color: #1274c0; border-radius: 5px; text-align: center; line-height: 44px; opacity: 0; transition: all 300ms;cursor:pointer; }
+.socialicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharesocialicn.svg)no-repeat}
+.facebookicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharefbicn.svg)no-repeat}
+.mailicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewshareemail.svg)no-repeat}
+.smsicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharesms.svg)no-repeat}
+.twittericon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharetwitter.svg)no-repeat}
+.whatsappicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharewhatsappicn.svg)no-repeat}
+.copylinkicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewshareicn.svg)no-repeat}
+.moreoptionicon{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharemoreicn.svg)no-repeat}
+/*sharepopup css*/
+
+
+.pricenotify{position:fixed;bottom:20%;background:rgba(0,0,0,0.7);color:#fff;font-size:13px;z-index:9999;display:block;box-shadow:0 0 4px 2px #ccc;width:250px;padding:7px 10px;box-sizing:border-box;margin:0 auto;left:0;right:0;border-radius:5px;text-align:center}
+.covviemo{font-size:14px;color:#1274c0;text-decoration:none;width:100%;display:block;box-sizing:border-box;text-align:center;padding:20px 20px 70px}
+.covid19_help{width:100%;padding:20px;margin-bottom:75px}
+.covid19_textbox{border-radius:5px;border:solid 1px #f0f3f5;background:#fff;padding:20px;color:#414e5a;line-height:1.57;font-weight:400}
+.covid19_textbox .anchor{font-weight:600;color:#0076d7;flex:none;cursor:pointer}
+.covid19_tabslist{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;margin:20px 0}
+.covid19_tab{width:150px;height:36px;font-weight:600;line-height:1.36;color:#414e5a;background-color:#fff;border:1px solid #e4eaef;border-radius:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;margin:0 10px}
+.covid19_tab.active{background-color:#0076d7;color:#fff}
+.covid19tablebox{overflow-x:auto}
+.covid19table-container{display:flex;overflow:auto;width:100%;-webkit-overflow-scrolling:touch;margin-bottom:10px}
+.covid19table-container .covid19table{display:flex;flex-direction:column;flex-wrap:nowrap;width:100%}
+.covid19table-container .covid19table-body{display:flex;flex-direction:column;flex-wrap:nowrap;width:100%}
+.covid19table-container .covid19table-body tr{width:100%;display:flex;flex-direction:row;flex-wrap:nowrap;background:#fff;margin-bottom:1px}
+.covid19table-container .covid19table-body tr td{overflow:hidden;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;font-weight:400;color:#414e5a;height:35px;line-height:35px}
+.covid19table-container .covid19table-rowheading{position:sticky;position:-webkit-sticky;top:0;left:0;z-index:1;background:#fff;-webkit-overflow-scrolling:touch;border-right:1px solid #e0e9ef}
+.covid19table-container .covid19table tr>td:nth-child(3n+1){width:30px}
+.covid19table-container .covid19table tr>td:nth-child(3n+2){width:50%}
+.covid19table-container .covid19table tr>td:nth-child(3n+3){width:45%;text-align:right;font-weight:600}
+.covid19table-container .tableanchor{color:#414e5a}
+
+/*accordion */
+.covid19accord{display:flex;width:100%;flex-direction:column; padding: 0;}
+.covid19accord .covid19accord_box{position:relative;display:block;width:100%;overflow:hidden;max-height:42px;margin-bottom:15px}
+.covid19accord .covid19accord_box>.covid19accord_head{width:100%;padding:0;margin:0;height:42px}
+.covid19accord .covid19accord_box>.covid19accord_head>.covid19accord_title{display:flex;width:100%;font-weight:600;color:#414e5a;height:42px;align-items:center;justify-content:space-between;border-bottom:solid 1px #f0f3f5}
+.covid19accord .covid19accord_box.active{width:100%;max-height:max-content}
+.covid19accord .covid19accord_box.active ~ .covid19accord_head{position:static;text-indent:0}
+.covid19accord .covid19accord_box.active .covid19accord_dropdown{transition:.7s;-webkit-transition:.7s;-moz-transition:.7s;-ms-transition:.7s;-o-transition:.7s;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.covid19accord .covid19accord_text{counter-reset:step-counter;list-style:none;padding:15px 0 0}
+.covid19accord .covid19accord_listtext{margin:0 0 16px;counter-increment:step-counter;position:relative;padding-left:30px;color:#414e5a;line-height:1.38}
+.covid19accord .covid19accord_listtext::before{content:counter(step-counter) '.';position:absolute;left:0;top:0}
+.covid19accord .covid19accord_dropdown{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdrpdwn.svg);flex:none;width:20px;height:20px;transition:.7s;-webkit-transition:.7s;-moz-transition:.7s;-ms-transition:.7s;-o-transition:.7s}
+.covid19accord .covid19_anchor{color:#414e5a;display:block;width:100%}
+/*accordion */
+
+
+/*covid19 Countries*/
+.covid19_countries{display:flex;width:100%;flex-direction:column}
+.covid19_countries .covid19_countries_heading{font-weight:600;color:#788898;line-height:1.42;height:37px;display:flex;width:100%;align-items:center;justify-content:space-between;padding:0 20px;position:relative}
+.covid19_countries .covid19_countries_heading:after{position:absolute;content:'';left:20px;bottom:0;background-color:#e5e5e5;width:calc(100% - 40px);height:1px}
+.covid19_countries .covid19accord{padding:0 20px}
+.covid19_countries .covid19_country_box{position:relative;display:flex;width:100%;overflow:hidden;flex-direction:column;border-bottom:solid 1px #e5e5e5}
+.covid19_countries .covid19_country_box:first-child{font-weight:700}
+.covid19_countries .covid19_country_box:last-child{border-bottom:none}
+.covid19_countries .covid19_country_head{width:100%;padding:0;margin:0;height:52px;display:flex}
+.covid19_countries .covid19_country_title{display:flex;width:100%;font-weight:600;color:#1a1b1d;height:52px;align-items:center;justify-content:space-between}
+.covid19_countries .covid19_country{display:flex;align-items:center}
+.covid19_countries .country_flag{margin-right:15px;width:20px;height:20px;display:inline-block;flex:none}
+.covid19_countries .country_flag .country_img{object-fit:cover;width: 20px;height: 20px;display: flex;align-items: flex-end;}
+.covid19_countries .covid19_country_number{display:flex;align-items:center;    white-space: nowrap;}
+.covid19_countries .covid19_dropdown{background-image:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/cvdrpdwn.svg);flex:none;margin-left:15px;width:20px;height:20px;transition:.7s;-webkit-transition:.7s;-moz-transition:.7s;-ms-transition:.7s;-o-transition:.7s}
+.covid19_countries .covid19_country_box .covid19_country_data{visibility:hidden;opacity:0;max-height:0;display:flex;width:100%;flex-direction:row;-webkit-transition: all 0.25s ease;-o-transition: all 0.25s ease;transition: all 0.25s ease;overflow:hidden;}
+.covid19_countries .covid19_country_datatab{display:flex;flex:none;width:25%;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.covid19_countries .covid19_country_datatab:nth-child(4n+1){color:#ff073a}
+.covid19_countries .covid19_country_datatab:nth-child(4n+2){color:#007bff}
+.covid19_countries .covid19_country_datatab:nth-child(4n+3){color:#28a745}
+.covid19_countries .covid19_country_datatab:nth-child(4n+4){color:#6c757d}
+.covid19_countries .datatab_heading{display:flex;width:100%;flex:none;font-weight:700;opacity:.6;text-transform:uppercase;justify-content:center;margin:5px 0 10px;line-height:1.4}
+.covid19_countries .datatab_number{display:flex;width:100%;flex:none;font-weight:600;justify-content:center;line-height:1.33;margin-bottom:2px}
+.covid19_countries .datatab_updown{display:flex;width:100%;flex:none;font-weight:700;opacity:.6;text-transform:uppercase;justify-content:center;line-height:1.42; margin-bottom: 20px;}
+.covid19_countries .covidtrend{display:flex;width:100%;flex:none;justify-content:center; margin-bottom: 20px;align-items: center;height: 30px; margin-top: 5px}
+.covid19_countries .covid19_country_box.active .covid19_country_data{visibility:visible;opacity:1;max-height:200px;-webkit-transition: all 0.25s ease;-o-transition: all 0.25s ease;transition: all 0.25s ease;}
+.covid19_countries .covid19_country_box.active:first-child .covid19_country_data{max-height:70px;}
+.covid19_countries .covid19_country_box.active:first-child .datatab_number {margin-bottom: 20px;}
+
+.covid19_countries .covid19_country_box.india.active .covid19_country_data{max-height:200px;}
+.covid19_countries .covid19_country_box.india.active .datatab_updown {margin-bottom: 5px;} 	
+
+.modal-open .covid19_countries .covid19_country_box.india.active .covid19_country_data{max-height:90px;}
+.modal-open .covid19_countries .covid19_country_box.india.active .datatab_updown {margin-bottom: 20px;} 	
+
+.covid19_countries .covid19_country_box.active .covid19_dropdown{transition:.7s;-webkit-transition:.7s;-moz-transition:.7s;-ms-transition:.7s;-o-transition:.7s;-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.covid19_countries .covid19_country_box.active .covid19_country_title{font-weight:700}
+
+.modal-open .covid19_countries .covid19_country_box:nth-child(2) .covidtrend{display:none;}
+/*covid19 Countries*/
+
+
+/*covid19 Home Table*/
+.covid19_increse{font-weight:600;line-height:1.38;color:#ff073a;margin-right:4px; font-size: 11px}
+.covid19_decrease{font-weight:600;line-height:1.38;color:#28a745;margin-right:4px; font-size: 11px}
+.covid19_uparrow{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/covid19_uparrow.svg);width:9px;height:10px;display:inline-block;background-repeat:no-repeat;background-size:100%;}
+.covid19_downarrow{background:url(https://akam.cdn.jdmagicbox.com/images/icontent/covid/covid19_downarrow.svg);width:9px;height:10px;display:inline-block;background-repeat:no-repeat;background-size:100%;margin-right:3px;transform: rotate(180deg);}
+.covid19_state_box{display:flex;width:100%;flex-direction:column;padding:20px 0 0;border-top:solid 1px #f0f3f5;border-bottom: solid 1px #f0f3f5;margin-bottom: 20px;}
+.covid19_state_head{display:flex;width:100%;padding:0 20px;color:#414e5a;font-weight:600;line-height:1.38}
+.covid19_tablebox{overflow-x:auto;padding:0 20px}
+.covid19_tablecontainer{display:flex;overflow:auto;width:100%;-webkit-overflow-scrolling:touch}
+.covid19_tablecontainer .covid19_table{display:flex;flex-direction:column;flex-wrap:nowrap;width:100%}
+.covid19_tablecontainer .covid19_head{font-size:12px}
+.covid19_tablecontainer .covid19_body{display:flex;flex-direction:column;flex-wrap:nowrap;width:100%; font-size:15px}
+.covid19_tablecontainer .covid19_head tr,.covid19_tablecontainer .covid19_body tr{width:100%;display:flex;flex-direction:row;flex-wrap:nowrap;background:#fff;margin-bottom:1px;border-bottom:1px solid #e5e5e5}
+.covid19_tablecontainer .covid19_body tr:last-child{border-bottom:none;}
+.covid19_tablecontainer .covid19_head tr th{height:35px;line-height:35px;font-weight:600;color:#788898;text-align:right}
+.covid19_tablecontainer .covid19_body tr td{font-weight:400;color:#1a1b1d;height:52px;line-height:52px;text-align:right}
+.covid19_tablecontainer .covid19_fixedbox{position:sticky;position:-webkit-sticky;top:0;left:0;z-index:1;background:#fff;-webkit-overflow-scrolling:touch;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.covid19_tablecontainer .covid19_table tr [data-label="State/UT"]{width:40%;text-align:left}
+.covid19_tablecontainer .covid19_table tr [data-label="Confirmed"]{width:15%}
+.covid19_tablecontainer .covid19_table tr [data-label="Active"]{width:15%}
+.covid19_tablecontainer .covid19_table tr [data-label="Recovered"]{width:15%}
+.covid19_tablecontainer .covid19_table tr [data-label="Deceased"]{width:15%}
+.covid19_tablecontainer .covid19_table tr td[data-label="State/UT"],.covid19_tablecontainer .covid19_table tr td[data-label="Confirmed"]{font-weight:600}
+/*covid19 Home Table*/
+
+
+/*covid19 New Table*/
+.covid19_states_list{display:flex;width:100%;flex-direction:column}
+.covid19_states_list .covid19_states_header{border-bottom:1px solid #e5e5e5;height:32px}
+.covid19_states_list .covid19_states_header .covid19_states_pannel{display:flex;flex-direction:column;width:100%;padding:0 20px}
+.covid19_states_list .covid19_states_header .covid19_pannel_head{width:100%;display:flex;height:32px;align-items:center; font-weight:600;color:#788898;text-transform:uppercase}
+.covid19_states_list .covid19_states_header .covid19_states_row{display:flex;width:100%;flex-direction:row;height:32px}
+.covid19_states_list .covid19_states_header .states_row_tab{text-align:right;height:32px;display:flex;align-items:center;justify-content:flex-end}
+.covid19_states_list .covid19_states_body{padding:0 20px}
+.covid19_states_list .covid19_states_body .covid19_states_pannel{display:flex;flex-direction:column;width:100%;position:relative;border-bottom: 1px solid #e5e5e5;}
+
+.covid19_states_list .covid19_states_body .covid19_pannel_head{width:100%;display:flex;height:50px;align-items:center;font-weight:400;color:#1a1b1d;text-transform:uppercase; position: relative;}
+
+
+.covid19_states_list .covid19_states_body .covid19_states_row{display:flex;width:100%;flex-direction:row;height:50px;align-items: center;}
+.covid19_states_list .covid19_states_body .states_row_tab{text-align:right;height:50px;display:flex;align-items:center;justify-content:flex-end}
+.covid19_states_list .states_row_tab[data-label="State/UT"]{min-width:100px;width:30%;text-align:left;justify-content:flex-start}
+.covid19_states_list .states_row_tab[data-label="Confirmed"]{min-width:90px;width:27%}
+.covid19_states_list .states_row_tab[data-label="Deceased"]{min-width:35px;width:12.3%}
+.covid19_states_list .states_row_tab[data-label="Active"]{min-width:45px;width:15.3%}
+.covid19_states_list .states_row_tab[data-label="Recovered"]{min-width:45px;width:15.3%}
+.covid19_states_list .covid19_states_body .states_row_tab[data-label="State/UT"] .states_name{overflow: hidden;max-height:30px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; -webkit-box-pack: center;}
+.covid19_states_list .covid19_states_body .states_row_tab[data-label="State/UT"],
+.covid19_states_list .covid19_states_body .states_row_tab[data-label="Confirmed"]{font-weight:600}
+.covid19_states_list .covid19_states_body .states_row_tab[data-label="State/UT"]{padding-left:0;line-height: 15px;}
+.covid19_states_list .covid19_districts_box{background-color:#fafafa;display:none;flex-direction:column;width:100%; -webkit-transition: all 0.25s ease; -o-transition: all 0.25s ease; transition: all 0.25s ease;} 
+.covid19_states_list .covid19_districts_heading{padding:0 20px;display:flex;justify-content:space-between;height:37px;align-items:center;border-bottom:1px solid #f2f2f2;text-transform:uppercase;color:#788898;font-weight:600}
+.covid19_states_list .covid19_districts_tabbox{display:flex;width:100%;padding:0 20px;justify-content:space-between;height:48px;align-items:center;border-bottom:1px solid #f2f2f2;font-weight:600;color:#1a1b1d;text-transform:uppercase}
+/*covid19 New Table*/
+
+
+
+
+
+/*covid19_view all btn*/
+.covid19_viewallbtn_box{display:flex;width:100%;padding:0 20px}
+.covid19_viewallbtn{width:100%;height:48px;font-weight:600;border-radius:48px;border:solid 1px #a8b3be;background:#fff;color:#1274c0;cursor:pointer;margin:20px 0;position:relative}
+.covid19_viewallbtn:hover{background:#1274c0;color:#fff;border:solid 1px #1274c0}
+/*covid19_view all btn*/
+
+/*covid19 map*/
+.covid19_map{display: flex; width: 100%; flex-direction: column;;border-bottom: solid 1px #f0f3f5; margin-bottom: 20px;}
+.covid19_map .covid19_mapheading{  line-height: 1.33;    color: #414e5a;font-weight: 600; padding: 0 20px; display: flex; flex-direction: row; justify-content: space-between;align-items: center;} 
+.covid19_map .covid19_mapdata{display: grid; width: 100%; padding: 0 20px; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-column-gap: 5px; margin: 20px 0 10px;}
+#WorldTab .covid19_mapdata{ grid-template-columns: 1fr 1fr 1fr 1fr; }
+.covid19_map .mapdata_tab{display: flex; flex-direction: column; width: 100%; flex:none; align-items: center; justify-content: center;  height: 55px;border-radius: 5px;}
+.covid19_map .mapdata_text{font-weight: 700; text-transform: uppercase;  line-height: 1.44; opacity: 0.6; margin-bottom: 3px;}
+.covid19_map .mapdata_num{  font-weight: 600;  line-height: 1.36;}
+.covid19_map .mapdata_tab:nth-child(4n+1){background-color:rgba(255, 7, 58, 0.08);color:#ff073a;}
+.covid19_map .mapdata_tab:nth-child(4n+2){background-color:rgba(0, 123, 255, 0.08);color:#007bff;}
+.covid19_map .mapdata_tab:nth-child(4n+3){background-color:rgba(40, 167, 69, 0.08); color:#28a745;}
+.covid19_map .mapdata_tab:nth-child(4n+4){background-color:rgba(108, 117, 125, 0.08); color:#6c757d;}
+.covid19_map .mapdata_tab:nth-child(5n+5){background-color:rgba(227, 226, 243,1); color:#3a35ac;}
+
+.covid19_map .covid19_mapstates_data{display:flex;padding:0 20px;justify-content:space-between;align-items:flex-start;width:100%}
+.covid19_map .covid19_mapstates_name{flex: none; font-weight: 700; color: #007bff; text-align: left; text-transform: uppercase; max-width: 60%; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden;}
+.covid19_map .covid19_mapstates_update{text-align:right;color:#28a745;text-transform:uppercase;font-weight:800}
+.covid19_map .covid19_update_last{opacity:.6}
+
+.covid19_map_tabs {display: flex;}
+.covid19_map .tabs-list .map_tab {display: inline-flex; background-color: #f8f8f8; border: none; height: 30px; align-items: center; padding: 0 15px; border-radius: 25px; border: 1px solid #e5e5e5; margin-left: 10px; line-height: normal; color: #414e5a; font-weight: 400; cursor: pointer;text-transform: capitalize;}
+.covid19_map .tabs-list.active .map_tab{color: #1274c0; border: 1px solid #c9e0f2; background-color: #e9f5fe;}
+/*.covid19-tab-content > .covid19-tab-pane {display: none;}
+.covid19-tab-content > .covid19-tab-pane.active {display: block;}*/
+/*covid19 map*/
+
+.covid19_updates{display:flex;width:100%;flex-direction:row;justify-content:space-between;align-items:flex-start}
+.covid19_lastup{font-weight:700;color:#788898;width:60%}
+.covid19_dontes a{color:#1274c0;font-weight:700;width:40%;justify-content:flex-end;text-align:right}
+
+
+/*Covid19 Spread Trend*/
+.covid19_spreadtrend{display:flex;width:100%;flex-direction:column;padding:0 20px;margin-bottom:15px}
+.covid19_spreadtrend .spreadtrend_heading{display:flex;width:100%;justify-content:space-between;}
+.covid19_spreadtrend .spreadtrend_title{font-weight:600;color:#414e5a;width:50%}
+.covid19_spreadtrend .spreadtrend_tablist{display:flex;width:50%;justify-content:flex-end}
+.covid19_spreadtrend .spreadtrend_text{color:#414e5a;font-weight:400;height:25px;border-radius:25px;border:solid 1px #e5e5e5;background-color:#f8f8f8;padding:0 12px;display:flex;align-items:center;line-height:25px;margin-left:10px;cursor:pointer;}
+.covid19_spreadtrend .spreadtrend_text.active{  border: solid 1px #c9e0f2;background-color: #e9f5fe; color: #1274c0;}
+.covid19_spreadtrend .spreadtrend_box{display:flex;min-height:auto;width:100%;border-bottom:1px solid #e5e5e5}
+
+.canvasjs-chart-tooltip{left:0!important;top:5px!important;bottom:auto!important;box-shadow:none!important}
+.cvgrpoutewrp{position:relative; width:100%;margin: 20px 0;}
+.confrmcase{position:absolute;top:0px;left:0px;z-index:1}
+.confrcas, .confrcdt{display:block;font-size:10px;font-weight:700;line-height:1.44}
+.confrcnt{font-size:20px;font-weight:700;display:table-cell;vertical-align:middle}
+.confrinc{font-size:9px;font-weight:700;display:table-cell;vertical-align:middle;padding-left:5px}
+.confrcntout{display:table;padding-top:3px}
+.chartjs-render-monitor{width: 100% !important;}
+.cvgrpoutewrp canvas{width: 100% !important} 
+
+.covidpilso{display:flex;flex-direction:column;padding:0 20px 20px;}
+.covidpils{    display: flex;flex-direction: row;align-self:flex-end;}
+.covidpils button{cursor: pointer;background-color:#f8f8f8;margin: 0;outline: none;padding:5px 15px;transition: background .25s ease-in-out;text-align:center;border:1px solid #e5e5e5;color:#414e5a;}
+.covidpils button.selected{color:#1274c0;border:1px solid #c9e0f2;background-color:#e9f5fe}
+.covidpils button:first-child{border-top-left-radius:15px;border-bottom-left-radius:15px;}
+.covidpils button:last-child{border-top-right-radius:15px;border-bottom-right-radius:15px;}
+/*Covid19 Spread Trend*/
+
+
+
+/*covid19 Modal*/
+.modal-open{overflow:hidden;position: fixed;}
+.modal{scroll-behavior: smooth;position:fixed;right:0;bottom:0;left:0;z-index:1050;display:block;-webkit-overflow-scrolling:touch;outline:0;width:100%;height:100vh;-webkit-transform:translateZ(0);float:left;top:0; border: 1px solid #e4e4e4; left: 50%; right: 50%; transform: translate(-50%, 0);}
+.modal-dialog{position:relative;width:auto;transform:translate3d(0,0,0);opacity:1;right:0;transition:all .5s;top:0}
+.modal-content{position:relative;background-color:#fff;background-clip:padding-box;border-radius:25px 25px 0 0;outline:0;display:flex;width:100%;flex-direction:column}
+.modal .poppage-modal-header{display:flex;align-items:center;justify-content:space-between;flex-direction:row;flex-wrap:nowrap;height:52px;padding:0;box-shadow:0 1px 2px 0 rgba(66,74,85,0.1);position:-webkit-sticky;position:sticky;top:0;z-index:10;background:#fff}
+.modal .poppage-header-left{display:flex;width:50px;justify-content:flex-start}
+.modal .poppage-header-center{display:flex;flex:1;justify-content:center}
+.modal .page-title{font-weight:600;text-align:center;color: #414e5a;}
+.modal .poppage-header-right{display:flex;width:50px;justify-content:flex-end;height:52px;width:50px;align-items:center; position: relative;}
+.modal .poppage-modal-body{background-color:#fff;width:100%;height:calc(100vh - 50px); float:left; width:100%; /*display:flex;flex-direction:column;*/overflow-y:auto;padding-bottom:150px}
+.modal .close_icon{position:absolute;right:0;top:0;width:50px;height:52px}
+.modal .close_icon:before,.modal .close_icon:after{position:absolute;right:24px;content:' ';height:20px;width:2px;background-color:#4c4a4a;top:16px}
+.modal .close_icon:before{transform:rotate(45deg)}
+.modal .close_icon:after{transform:rotate(-45deg)}
+/*covid19 Modal*/
+
+#chart{width:100%;height:450px}
+.path-default, .path-region:hover{stroke:#0061ff;stroke-width:3;}
+.svg-parent{padding: 0 20px;}
+#hover_17{stroke-width:5;}
+
+
+.section-loader-box{display:flex;width:100%;align-items: center;justify-content: center;min-height: 300px;background-color:#f3f4f5;margin-top:10px;}
+.section-loader,
+.section-loader:after{border-radius:50%;width:10em;height:10em}
+.section-loader{margin:0px auto;font-size: 0.2em;position:relative;text-indent:-9999em;border-top:1.1em solid rgba(0, 100, 224, 0.2);border-right:1.1em solid rgba(0, 100, 224, 0.2);border-bottom:1.1em solid rgba(0, 100, 224, 0.2);border-left:1.1em solid #0064e0;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:section-loader 1.1s infinite linear;animation:section-loader 1.1s infinite linear;} 
+
+
+
+.covid19_zone{display: table;width: 100%;table-layout: fixed;padding: 5px 0;}
+.covid19_zoneleft{display: table-cell;}	
+.covid19_zoneright{display: table-cell;    text-align: right;}	
+.rzone{    background-color: #ff073a;     color: #fff;     padding: 5px;     width: 110px;     display: inline-block;text-align:center;}
+.ozone{    background-color: #ffa207;     color: #fff;     padding: 5px;     width: 110px;     display: inline-block;text-align:center;}
+.gzone{    background-color: #6cbf0a;     color: #fff;     padding: 5px;     width: 110px;     display: inline-block;text-align:center;}
+
+
+@media screen and (min-width: 375px) {
+
+.font9{font-size:calc(9px + 0.15vh);}
+.font10{font-size:calc(10px + 0.15vh);}
+.font11{font-size:calc(11px + 0.15vh);}
+.font12{font-size:calc(12px + 0.15vh);}
+.font13{font-size:calc(13px + 0.15vh);}
+.font14{font-size:calc(14px + 0.15vh);}
+.font15{font-size:calc(15px + 0.15vh);}
+.font16{font-size:calc(16px + 0.15vh);}
+.font17{font-size:calc(17px + 0.15vh);}
+.font18{font-size:calc(18px + 0.15vh);}
+.font24{font-size:calc(24px + 0.15vh);}
+.font26{font-size:calc(26px + 0.15vh);}
+.font32{font-size:calc(32px + 0.15vh);}
+
+}
+
+@media screen and (max-width: 767px) {
+body{width:100%;border:none;}
+.modal{border: none; left: 0; right: 0; transform: translate(0, 0); width: 100%;}
+.covid19_tablebox{overflow-x:auto;padding:0 0 0 20px}
+.covid19_tablecontainer .covid19_table{width:768px; padding-right: 20px;}
+.covid19_tablecontainer .covid19_table tr [data-label="State/UT"]{min-width:90px;line-height: 16px;display: flex;align-items: center;}
+.covid19_tablecontainer .covid19_table tr [data-label="Confirmed"]{min-width:90px}
+.covid19_tablecontainer .covid19_table tr [data-label="Active"]{min-width:40px}
+.covid19_tablecontainer .covid19_table tr [data-label="Recovered"]{min-width:40px}
+.covid19_tablecontainer .covid19_table tr [data-label="Deceased"]{min-width:40px}
+
+#chart{width: 100%; height: 100%;margin-top: 10px;}
+.covid19_spreadtrend .spreadtrend_box{min-height:196px;}
+
+}
+
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 0.45s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-loader{animation-name:section-loader}
+@keyframes section-loader { 0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)} 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)} }

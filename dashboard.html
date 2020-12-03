@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    
+    <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/hospital-489-538740.png" />
+    
+    <link rel="stylesheet" href="https:////maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" name="Normalize Style 8.0.0">
+    <link rel="stylesheet" href="http://cloud.dograsweblog.com/force-framework/style/v-1.4/style.min.css" name="ForceFramework Main Style">
+    <link rel="stylesheet" href="http://cloud.dograsweblog.com/force-framework/style/v-1.4/media.min.css" name="ForceFramework Media Style">
+    
+
+<style>
+    
+body{ font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 1.5;}
+h1 { text-align: center; margin-top: 50px; margin-bottom: 30px;}
+
+.menu-parent { background: #323232; color: #ffffff; text-align: left;}
+.menu-parent.style1 { background: #1e7cdc;}
+.menu-parent.style2 { background: #f77528;}
+.menu-parent.style3 { background: #50bd0b;}
+.menu-parent * { margin: 0; padding: 0;}
+.menu-parent li { list-style: none;}
+.menu-parent ul ul { display: none;}
+.menu-parent li.active>ul { display: block;}
+.menu-parent > ul > li > a { position: relative; display: block; background: #003040; background: linear-gradient(#003040, #002535); padding: 0 30px; font-size: 16px; line-height: 4; color: #ffffff; text-decoration: none;}
+.menu-parent > ul > li > a .fa { margin-right: 8px;}
+.menu-parent ul ul li a { color: #ffffff; text-decoration: none; font-size: 16px; line-height: 4; display: block; padding: 0 30px; position: relative;}
+.menu-parent ul ul li a:hover { background: #003545;}
+.menu-parent ul ul ul { background: rgba(0,0,0,.1); padding: 0;}
+.menu-parent a:not(:only-child):after { position: absolute; right: 20px; content: "\f067"; top: -6px; font-size: 20px; font-family: FontAwesome;}
+.menu-parent .active>a:not(:only-child):after { content: "\f068"; top: -6px; font-size: 20px; font-family: FontAwesome;}
+
+</style>
+<script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  </head>
+  <body translate="no">
+    <div class="container">
+      <div class="horizontal">
+          <div class="vertical">
+              <h1>Hospital/Test Centres</h1>
+              
+          </div>
+      </div>
+      <div class="horizontal">
+        <div class="verticals four">
+            <div id="accordian" class="menu-parent style1">
+                <ul class="menu">
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Andhra Pradesh</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Tirupati/Sri-Venkateshwara-Institute-Of-Medical-Sciences-S.v.university/9999PMULHYDSTD2834_BZDET">Sri Venkateshwara Institute Of Medical Sciences, S.v.university, Tirupati</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Anantapur/Government-General-Hospital-Anantapur Ho/9999PMULHYDSTD7552_BZDET">Government General Hospital, Anantapur Ho, Anantapur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Guntur/Guntur-Medical-College-Kanna Vari Thota/9999PMULHYDSTD8900764_BZDET">Guntur Medical College, Kanna Vari Thota, Guntur</a></li>
+                            <li><li class="covid19accord_listtext"><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Vijayawada/Siddhartha-Medical-College-Gunadala/0866PX866-X866-170330111928-A1Q4_BZDET">Siddhartha Medical College, Gunadala, Vijayawada</a></li></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Visakhapatnam/Andhra-Medical-College-Maharanipeta/0891PX891-X891-001097641515-T1K6_BZDET">Andhra Medical College, Maharanipeta, Visakhapatnam</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Andaman & Nicobar Islands </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Port Blair/Regional-Medical-Research-Institute/9999PXXXX-XXXX-101005211953-D9D6_BZDET">Regional Medical Research Institute, Port Blair</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Arunachal Pradesh </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Itanagar/Tomo-Riba-Institute-Of-Health-And-Medical-Sciences-Naharlagun/9999PX360-X360-181113202138-B7K8_BZDET"> Tomo Riba Institute of Health &amp; Medical Sciences (TRIHMS), Naharlagun</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Assam</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Barpeta/Fakhruddin-Ali-Ahmed-Medical-College-And-Hospital-Thakur Bazar/9999P3665-3665-171006114226-Z9B4_BZDET">Fakhruddin Ali Ahmed Medical College And Hospital, Thakur Bazar, Barpeta</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/North Cachar Hills/Silchar-Medical-College-And-Hospital-Silchar Medical College/9999P3842-3842-110214215739-W2Q2_BZDET">Silchar Medical College And Hospital, Silchar Medical College, North Cachar Hills</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jorhat/Johrat-Medical-College-Barbheta/9999P3771-3771-120926115228-P8A9_BZDET">Johrat Medical College, Barbheta, Jorhat</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Guwahati/Gauhati-Medical-College-&amp;-Hospital-Indrapur/9999PX361-X361-140510151655-A6B1_BZDET">Gauhati Medical College &amp; Hospital, Indrapur, Guwahati</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Dibrugarh/Regional-Medical-Research-Centre-Dibrugarh Ho/9999PX373-X373-180224215740-P8N5_BZDET">Regional Medical Research Centre, Dibrugarh Ho, Dibrugarh</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Bihar</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Darbhanga/Darbhanga-Medical-College-&amp;-Hospital-Dmc/9999P6272-6272-140512065010-R5L6_BZDET">Darbhanga Medical College &amp; Hospital, Dmc, Darbhanga</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Patna/All-India-Institute-Of-Medical-Sciences-Aiims/0612PX612-X612-120917122813-L6X7_BZDET">All India Institute Of Medical Sciences, Aiims, Patna</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Patna/Indira-Gandhi-Institute-Of-Medical-Sciences-Sheikhpura/0612PX612-X612-1235981451M2U8H4-DC_BZDET">Indira Gandhi Institute Of Medical Sciences, Sheikhpura, Patna</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Patna/Patna-Medical-College-&amp;-Hospital-Machuatoli/0612P612STD532_BZDET">Patna Medical College &amp; Hospital, Machuatoli, Patna</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Patna/Rajendra-Memorial-Research-Institute-Of-Medical-Sciences-Dental College/0612P612STD4581_BZDET">Rajendra Memorial Research Institute Of Medical Sciences, Dental College, Patna</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Chandigarh</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chandigarh/Government-Medical-College-&amp;-Hospital-Chandigarh Sector 32/0172P172STD13091_BZDET">Government Medical College &amp; Hospital, Chandigarh Sector 32, Chandigarh</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chandigarh/Post-Graduate-Institute-Of-Medical-Education-&amp;-Research-Chandigarh Sector 12/0172P1762-1762-111202205810-D5S6_BZDET">Post Graduate Institute Of Medical Education &amp; Research, Chandigarh Sector 12, Chandigarh</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chandigarh/Institute-Of-Microbial-Technology-Chandigarh Sector 39a/0172P172STD16534_BZDET">Institute Of Microbial Technology, Chandigarh Sector 39a, Chandigarh</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Chhattisgarh</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bastar/Late-Baliram-Kashyap-Memorial-Govt.-Medical-College-Dimrapal/9999P7782-7782-170608170126-E8M4_BZDET">Late Baliram Kashyap Memorial Govt. Medical College, Dimrapal, Bastar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Raipur-chhattisgarh/AIIMS-Hospital-Tatibandh/9999PX771-X771-170227064515-T1Y4_BZDET">AIIMS Hospital, Tatibandh, Raipur-chhattisgarh</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Raipur-chhattisgarh/Dr.-Bhim-Rao-Ambedkar-Memorial-Hospital-Raipur Kutchery/9999PX771-X771-180226205208-S1T6_BZDET">Dr. Bhim Rao Ambedkar Memorial Hospital, Raipur Kutchery, Raipur-chhattisgarh</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Dadra & Nagar Haveli</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Silvassa/Shri-Vinoba-Bhave-Civil-Hospital-Silvassa Ho/9999PX260-X260-130106163748-A8W9_BZDET">Shri Vinoba Bhave Civil Hospital, Silvassa Ho, Silvassa</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Delhi-NCR</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Dr.-Dangs-Lab-Llp-Safdarjung Development Area/011PXX11-XX11-121111101818-E1K2_BZDET">Dr. Dangs Lab Llp, Safdarjung Development Area, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Prognosis-Laboratories-Dwarka Sector 19/011PXX11-XX11-110616141921-P3R8_BZDET">Prognosis Laboratories, Dwarka Sector 19, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Oncquest-Laboratories-Ltd-Safdarjung Enclave/011PXX11-XX11-150403113326-S9A7_BZDET">Oncquest Laboratories Ltd, Safdarjung Enclave, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Sir-Ganga-Ram-Hospital-Old Rajender Nagar/011PXX11-XX11-000640623069-C8Y3_BZDET">Sir Ganga Ram Hospital, Old Rajender Nagar, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Aiims-Hospital-Ansari Nagar-aiims/011PXX11-XX11-000610827862-S1M0_BZDET">Aiims Hospital, Ansari Nagar-aiims, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Blk-Super-Speciality-Hospital-Pusa Road/011PXX11-XX11-090818134858-Q9P4_BZDET">Blk Super Speciality Hospital, Pusa Road, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Indraprastha-Apollo-Hospitals-Sarita Vihar/011PXX11-XX11-110808094820-E1H8_BZDET">Indraprastha Apollo Hospitals, Sarita Vihar, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Dr.-Ram-Manohar-Lohia-Hospital-Connaught Place/011PK041630_BZDET">Dr. Ram Manohar Lohia Hospital, Connaught Place, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Safdarjung-Hospital-Safdarjung Enclave/011PK025420_BZDET">Safdarjung Hospital, Safdarjung Enclave, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Dr.-Lal-PathLabs-Rohini Sector 18/011PXX11-XX11-101018100137-P8W7_BZDET">Dr. Lal PathLabs, Rohini Sector 18, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Institute-Of-Liver-&amp;-Biliary-Sciences-Vasant Kunj/011P105458_BZDET">Institute Of Liver &amp; Biliary Sciences, Vasant Kunj, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/City-X-Ray-&amp;-Scan-Clinic-Pvt-Ltd-Tilak Nagar/011PXX11-XX11-111018143441-E3T8_BZDET">City X Ray &amp; Scan Clinic Pvt Ltd, Tilak Nagar, Delhi</a></li> 
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Army-R-&amp;-R-Hospital-Dhaula Kuan/011P56329_BZDET">Army R &amp; R Hospital, Dhaula Kuan, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Maulana-Azad-Medical-College-Ito/011PXX11-XX11-001148811413-Q4H1_BZDET">Maulana Azad Medical College, Ito, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Lady-Harding-Medical-College-Connaught Place/011PXX11-XX11-120116152827-P3I9_BZDET">Lady Harding Medical College, Connaught Place, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/National-Centre-For-Disease-Control-Civil Lines/011P63525_BZDET">National Centre For Disease Control, Civil Lines, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Max-Lab-Saket/011PXX11-XX11-200123194531-I6I9_BZDET">Max Lab, Saket, Delhi</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Goa</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Goa/Goa-Medical-College-&amp;-Hospital-Bambolim/0832P832STD50058_BZDET">Goa Medical College &amp; Hospital, Bambolim, Goa</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Gujarat</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/Unipath-Speciality-Laboratory-Ltd-Ellis Bridge/079PXX79-XX79-090627171451-N2R5_BZDET">Unipath Speciality Laboratory Ltd, Ellis Bridge, Ahmedabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/Civil-Hospital-Sola Road/079P252003_BZDET">Civil Hospital, Sola Road, Ahmedabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jamnagar/M-P-Shah-Medical-College-Pandit Nehru Marg/0288P288STD10064_BZDET">M P Shah Medical College, Pandit Nehru Marg, Jamnagar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/Supratech-Micropath-Laboratory-Ellis Bridge/079PXX79-XX79-000563596097-Z5X8_BZDET">Supratech Micropath Laboratory, Ellis Bridge, Ahmedabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhavnagar/Government-Medical-College-Kalanala/0278PX278-X278-110103155642-X4I1_BZDET">Government Medical College, Kalanala, Bhavnagar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/B-J-Medical-College-Asarwa/079P251518_BZDET">B J Medical College, Asarwa, Ahmedabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Surat/Government-Medical-College-Majura Gate/0261P261STD20090_BZDET">Government Medical College, Majura Gate, Surat</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Vadodara/Government-Medical-College-Sayaji Ganj/0265PX265-X265-000795326916-O9G2_BZDET">Government Medical College, Sayaji Ganj, Vadodara</a></li> 
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Rajkot/Pandit-Deendayal-Upadhyay-Medical-College-Civil Hospital/0281PX281-X281-140308213057-C5V1_BZDET">Pandit Deendayal Upadhyay Medical College, Civil Hospital, Rajkot</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/Smt-NHL-Municipal-Medical-College-Ellis Bridge/079P252812_BZDET">Smt NHL Municipal Medical College, Ellis Bridge, Ahmedabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Surat/SN-Gene-Lab-Nanpura/0261PX261-X261-000919632477-E5G5_BZDET">SN Gene Lab, Nanpura, Surat</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/National-Institute-Of-Occupational-Health-Meghaninagar/079P250593_BZDET">National Institute Of Occupational Health, Meghaninagar, Ahmedabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ahmedabad/Pangenomics-Ellis Bridge/079PXX79-XX79-170921161757-K8R9_BZDET">Pangenomics, Ellis Bridge, Ahmedabad</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Haryana</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Modern-Diagnostic-&amp;-Research-Centre-New Railway Road/011PJDYPDL52288_BZDET">Modern Diagnostic &amp; Research Centre, New Railway Road, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/PathKind-Diagnostics-Pvt-Ltd-Udyog Vihar Gurgaon/011PXX11-XX11-191219094617-G7X9_BZDET">PathKind Diagnostics Pvt Ltd, Udyog Vihar Gurgaon, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Rohtak/Pt-Bhagwat-Dayal-Sharma-Post-Graduate-Institute-Of-Medical-Sciences/9999PMULDELSTD45001_BZDET">Pt Bhagwat Dayal Sharma Post Graduate Institute Of Medical Sciences, Rohtak</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Sonepat/Bps-Government-Medical-College-For-Women-Khanpur Kalan/9999PX130-X130-150526160720-P6B5_BZDET">Bps Government Medical College For Women, Khanpur Kalan, Sonepat</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Karnal/Kalpana-Chawla-Government-Medica-Hospital-Kunjpura Road/9999PX184-X184-171231200016-V6R6_BZDET">Kalpana Chawla Government Medica Hospital, Kunjpura Road, Karnal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hissar/National-Research-Centre-On-Equines-Hissar Ho/9999P1662-1662-120923094936-P8L5_BZDET">National Research Centre On Equines, Hissar Ho, Hissar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/SRL-Diagnostics-Gurgaon Sector-18/011P1227361021T7H3G1_BZDET">SRL Diagnostics, Gurgaon Sector-18, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Esic-Hospital-Faridabad Nit/011P363780_BZDET">Esic Hospital, Faridabad Nit, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Core-Diagnostic-Udyog Vihar Industrial Area Phase 3/011PXX11-XX11-130129202448-K7E3_BZDET">Core Diagnostic, Udyog Vihar Industrial Area Phase 3, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Strand-Life-Sciences-Pvt-Ltd-Gurgaon Sector 34/011PXX11-XX11-200107091502-Z5Y2_BZDET">Strand Life Sciences Pvt Ltd, Gurgaon Sector 34, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Translational-Health-Science-And-Technology-Institute-Faridabad/011PXX11-XX11-150402204835-D5L5_BZDET">Translational Health Science And Technology Institute, Faridabad, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Molq-Laboratory-Electronic City/011PX124-X124-120629155100-K4L2_BZDET">Molq Laboratory, Electronic City, Delhi</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Himachal Pradesh</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kangra/Dr.-Rajender-Prasad-Government-Medical-College-Tanda/9999P1892-1892-120509182709-G7A2_BZDET">Dr. Rajender Prasad Government Medical College, Tanda, Kangra</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Shimla/Indira-Gandhi-Medical-College-Shimla Gpo/0177PX177-X177-000037318858-C2W7_BZDET">Indira Gandhi Medical College, Shimla Gpo, Shimla</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Solan/Central-Research-Institute-Kasauli Solan/9999PMULDELSTD1260034_BZDET">Central Research Institute, Kasauli Solan, Solan</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Jammu and Kashmir</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Leh Ladakh/SNM-Hospital-Leh Ladakh/9999P1985-1985-120808114041-Q9Y2_BZDET">SNM Hospital, Leh Ladakh, Leh Ladakh</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Srinagar/Sher-I-Kashmir-Institute-Of-Medical-Sciences-Nowshera Srinagar/9999PMULDELSTD7253_BZDET">Sher I Kashmir Institute Of Medical Sciences, Nowshera Srinagar, Srinagar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jammu/Government-Medical-College-Jammu-Bakshi Nagar/9999PX191-X191-110214161216-T1E5_BZDET">Government Medical College Jammu, Bakshi Nagar, Jammu</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Udhampur/Command-Hospital-Mj Road/9999P1992-1992-130829104319-D6P7_BZDET">Command Hospital, Mj Road, Udhampur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Srinagar/Government-Medical-College-Srinagar-Karan Nagar/9999PMULDELSTD7254_BZDET">Government Medical College Srinagar, Karan Nagar, Srinagar</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Jharkhand</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ranchi/Rajendra-Institute-Of-Medical-Sciences-Bariatu/0651PX651-X651-091015153654-Q8Y5_BZDET">Rajendra Institute Of Medical Sciences, Bariatu, Ranchi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jamshedpur/MGM-Medical-College-&amp;-Hospital-Pardih/0657PX657-X657-101029145325-D7U1_BZDET">MGM Medical College &amp; Hospital, Pardih, Jamshedpur</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Karnataka</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bangalore/Anand-Diagnostic-Laboratory---A-Neuberg-Associate-(Head-Office)-Shivaji Nagar/080PPE02416_BZDET">Anand Diagnostic Laboratory - A Neuberg Associate (Head Office), Shivaji Nagar, Bangalore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mangalore/Wenlock-District-Hospital-Hampankatta/0824PX824-X824-000459748198-S4Z6_BZDET">Wenlock District Hospital, Hampankatta, Mangalore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bangalore/Nimhans-Hospital-Hosur Road/080P300111_BZDET">Nimhans Hospital, Hosur Road, Bangalore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Shimoga/Shimoga-Institute-Of-Medical-Sciences-Bh Road Shimoga/9999PMULBLRSTD1006801_BZDET">Shimoga Institute Of Medical Sciences, Bh Road Shimoga, Shimoga</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Gulbarga/Gulbarga-Institute-Of-Medical-Sciences-Sedam Road/9999P8472-8472-170606182908-R6B5_BZDET">Gulbarga Institute Of Medical Sciences, Sedam Road, Gulbarga</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hassan/Hassan-Institute-Of-Medical-Sciences-Bm Road/9999PMULBLRSTD1200870_BZDET">Hassan Institute Of Medical Sciences, Bm Road, Hassan</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hubli/Karnataka-Institute-Of-Medical-Sciences-Vidyanagar Hubli/0836PX836-X836-171203065724-K7V8_BZDET">Karnataka Institute Of Medical Sciences, Vidyanagar Hubli, Hubli</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mysore/Mysore-Medical-College-&amp;-Research-Institute-Irwin Road/0821PX821-X821-001227506627-Z1M1_BZDET">Mysore Medical College &amp; Research Institute, Irwin Road, Mysore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bangalore/Vydehi-Institute-Of-Medical-Sciences-&amp;-Research-Centre-Whitefield/080P5901300_BZDET">Vydehi Institute Of Medical Sciences &amp; Research Centre, Whitefield, Bangalore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bangalore/Airforce-Command-Hospital-Old Airport Road/080P5153594_BZDET">Airforce Command Hospital, Old Airport Road, Bangalore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bangalore/Bangalore-Medical-College-&amp;-Research-Institute-Kalasipalyam/080P47425_BZDET">Bangalore Medical College &amp; Research Institute, Kalasipalyam, Bangalore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bangalore/National-Institute-Of-Virology-Field-Station-Kalasipalyam/080P54711_BZDET">National Institute Of Virology Field Station, Kalasipalyam, Bangalore</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Kerala</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kozhikode/Aster-MIMS-Calicut-Govindapuram/0495PX495-X495-000346725074-J8Q3_BZDET">Aster MIMS Calicut, Govindapuram, Kozhikode</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Alappuzha/National-Institute-Of-Virology-Field-Unit-Alappuzha Medical College/0477PX477-X477-200318104335-M7U8_BZDET">National Institute Of Virology Field Unit, Alappuzha Medical College, Alappuzha</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kozhikode/Calicut-Medical-College-Calicut Medical College/0495PX495-X495-091008114952-L2K3DC_BZDET">Calicut Medical College, Calicut Medical College, Kozhikode</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thrissur/Government-Medical-College-Mulagunnathukavu/9999PMULBLRSTD1008078_BZDET">Government Medical College, Mulagunnathukavu, Thrissur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thiruvananthapuram/Trivandrum-Medical-College-Thiruvananthapuram Medical College/0471P471STD4001289_BZDET">Trivandrum Medical College, Thiruvananthapuram Medical College, Thiruvananthapuram</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thiruvananthapuram/Sree-Chitra-Tirunal-Institute-For-Medical-Sciences-&amp;-Technology-Thiruvananthapuram Medical College/0471PX471-X471-140629001426-X6M1_BZDET">Sree Chitra Tirunal Institute For Medical Sciences &amp; Technology, Thiruvananthapuram Medical College, Thiruvananthapuram</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ernakulam/Government-Medical-College-And-Hospital-HMT Colony/0484PX484-X484-190814142241-P2H9_BZDET">Government Medical College And Hospital, HMT Colony, Ernakulam</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thiruvananthapuram/State-Public-Health-And-Clinical-Laboratory-Pattoor/0471PX471-X471-170929110840-D4Q1_BZDET">State Public Health And Clinical Laboratory, Pattoor, Thiruvananthapuram</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ernakulam/Ddrc-Srl-Diagnostics-Pvt-Ltd-Panampilly Nagar/0484PX484-X484-001092494804-C7P7_BZDET">Ddrc Srl Diagnostics Pvt Ltd, Panampilly Nagar, Ernakulam</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kottayam/Inter-University-Center-For-Biomedical-Research-And-Super-Super-Speciality-Hospital-Rubber Board/9999PX481-X481-200404095326-R3U9_BZDET">Inter University Center For Biomedical Research And Super Super Speciality Hospital, Rubber Board, Kottayam</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thiruvananthapuram/Rajiv-Gandhi-Centre-For-Biotechnology-Kazhakuttam/0471PX471-X471-200415145102-Q5J5_BZDET">Rajiv Gandhi Centre For Biotechnology, Kazhakuttam, Thiruvananthapuram</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Ladakh</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Leh Ladakh/SNM-Hospital-Leh Ladakh/9999P1985-1985-120808114041-Q9Y2_BZDET">SNM Hospital, Leh Ladakh, Leh Ladakh</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Madhya Pradesh </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhopal/AIIMS-Hospital-Aiims/0755PX755-X755-140721150123-Y6P2_BZDET">AIIMS Hospital, Aiims, Bhopal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Sagar/Bundelkhand-Medical-College-Sagar City/9999P7582-7582-130513182438-L8F7_BZDET">Bundelkhand Medical College, Sagar City, Sagar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhopal/Chirayu-Hospital-Bairagarh/0755PX755-X755-110310114627-V6C4_BZDET">Chirayu Hospital, Bairagarh, Bhopal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Gwalior/Gajra-Raja-Medical-College-Lashkar City/9999PMULMUMSTD502249_BZDET">Gajra Raja Medical College, Lashkar City, Gwalior</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhopal/Bhopal-Memorial-Hospital-&amp;-Research-Centre-Karond/0755P755STD201_BZDET">Bhopal Memorial Hospital &amp; Research Centre, Karond, Bhopal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhopal/Gandhi-Medical-College-Sultania Road/0755P755STD71_BZDET">Gandhi Medical College, Sultania Road, Bhopal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Indore/Mahatma-Gandhi-Memorial-Medical-College-A B Road/0731PX731-X731-000736628495-Q4D4_BZDET">Mahatma Gandhi Memorial Medical College, A B Road, Indore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jabalpur/Regional-Medical-Research-Centre-For-Tribals-Garha/9999PX761-X761-110201172724-M6D7_BZDET">Regional Medical Research Centre For Tribals, Garha, Jabalpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhopal/National-Institute-Of-High-Security-Animal-Diseases-Anand Nagar/0755PX755-X755-170926114129-M4U3_BZDET">National Institute Of High Security Animal Diseases, Anand Nagar, Bhopal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Gwalior/Defence-Research-&amp;-Development-Establishment-Gwalior Railway Station/9999PX751-X751-110202162325-B9V8_BZDET">Defence Research &amp; Development Establishment, Gwalior Railway Station, Gwalior</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Meghalaya </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/East Khasi Hills/North-Eastern-Indira-Gandhi-Regional-Institute-Of-Health-&amp;-Medical-Sciences-Neigrihms/9999PX364-X364-140215113125-W5H1_BZDET">North Eastern Indira Gandhi Regional Institute Of Health &amp; Medical Sciences, Neigrihms, East Khasi Hills</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Maharashtra</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/SRL-Diagnostics-Goregaon West/022PXX22-XX22-100223024946-S6I1_BZDET">SRL Diagnostics, Goregaon West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Wardha/Metropolis-Pathology-Lab/9999P7152-7152-180811103008-V4J9_BZDET">Metropolis Pathology Lab, Wardha</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Dr.-Jariwala-Laboratory-&amp;-Diagnostics-LLP-Borivali West/022PXX22-XX22-131023143547-B8L8_BZDET">Dr. Jariwala Laboratory &amp; Diagnostics LLP, Borivali West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Suburban-Diagnostics-India-Pvt-Ltd-Thakur Village-kandivali East/022PXX22-XX22-180212055745-K1R5_BZDET">Suburban Diagnostics India Pvt Ltd, Thakur Village-kandivali East, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/Metropolis-Healthcare-Ltd-(INDIA)-Pvt-Ltd-Bhandarkar Road/020PXX20-XX20-170906215036-N5F4_BZDET">Metropolis Healthcare Ltd (INDIA) Pvt Ltd, Bhandarkar Road, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Suburban-Diagnostics-India-Pvt-Ltd-Thane West/022PXX22-XX22-180209125404-Z3B1_BZDET">Suburban Diagnostics India Pvt Ltd, Thane West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Suburban-Diagnostics-India-Pvt-Ltd-Ghatkopar West/022PXX22-XX22-150711102202-D4Q3_BZDET">Suburban Diagnostics India Pvt Ltd, Ghatkopar West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Suburban-Diagnostics-India-Pvt-Ltd-Pedder Road/022PXX22-XX22-141114160155-G4M5_BZDET">Suburban Diagnostics India Pvt Ltd, Pedder Road, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/Sahyadri-Speciality-Labs-Kothrud/020PXX20-XX20-150402105010-F1S5_BZDET">Sahyadri Speciality Labs, Kothrud, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/Suburban-Diagnostic-India-Pvt-Ltd-Baner/020PXX20-XX20-200326104813-D6D5_BZDET">Suburban Diagnostic India Pvt Ltd, Baner, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Suburban-Diagnostic-India-Pvt-Ltd-Vidya Vihar West/022PXX22-XX22-200326105836-J5J3_BZDET">Suburban Diagnostic India Pvt Ltd, Vidya Vihar West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Kokilaben-Dhirubhai-Ambani-Hospital-Four Bunglows-andheri West/022PK004714_BZDET">Kokilaben Dhirubhai Ambani Hospital, Four Bunglows-andheri West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/P-D-Hinduja-Hospital-&amp;-Medical-Research-Centre-Mahim/022PGL01969_BZDET">P D Hinduja Hospital &amp; Medical Research Centre, Mahim, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/KEM-Hospital-Parel/022P810836_BZDET">KEM Hospital, Parel, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/J-J-Hospital-Nagpada-mumbai Central/022PXX22-XX22-000943846152-O4V6_BZDET">J J Hospital, Nagpada-mumbai Central, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Nagpur/Indira-Gandhi-Government-Medical-College-&amp;-Hospital-Central Avenue/0712P712STD2000618_BZDET">Indira Gandhi Government Medical College &amp; Hospital, Central Avenue, Nagpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Sir-H-N-Reliance-Foundation-Hospital-And-Research-Centre-Girgaon/022P811601_BZDET">Sir H N Reliance Foundation Hospital And Research Centre, Girgaon, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Dhule/Shri-Bhausaheb-Hire-Government-Medical-College-And-Hospital/9999P2562-2562-170922171213-B8B9_BZDET">Shri Bhausaheb Hire Government Medical College And Hospital, Dhule</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Kasturba-Hospital-Chinchpokli/022P860007_BZDET">Kasturba Hospital, Chinchpokli, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Chhatrapati-Shivaji-Maharaj-Hospital-Kalwa/022P8404230_BZDET">Chhatrapati Shivaji Maharaj Hospital, Kalwa, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/Dr.-Naidu-Hospital-Sangamwadi/020P5050525_BZDET">Dr. Naidu Hospital, Sangamwadi, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/A.G-Diagnostics-Pvt-Ltd-Bhandarkar Road/020PXX20-XX20-180306114954-Q3W7_BZDET">A.G Diagnostics Pvt Ltd, Bhandarkar Road, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Thyrocare-Technologies-Ltd-(Head-Office)-Turbhe/022PK057858_BZDET">Thyrocare Technologies Ltd (Head Office), Turbhe, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/B-J-Medical-College-And-Sassoon-Hospital-Bund Garden Road/020PXX20-XX20-140703171608-V7N5_BZDET">B J Medical College And Sassoon Hospital, Bund Garden Road, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Haffkine-Institute-For-Training-Research-&amp;-Testing-Parel/022P804688_BZDET">Haffkine Institute For Training Research &amp; Testing, Parel, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Igenetic-Diagnostics-Andheri East/022PXX22-XX22-161119131933-W3G6_BZDET">Igenetic Diagnostics, Andheri East, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/ICMR-National-Institute-of-Virology-Pashan Gaon/020PXX20-XX20-090722123426-G5C4_BZDET">ICMR-National Institute of Virology, Pashan Gaon, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Infexn-Laboratories-Pvt-Ltd-Thane West/022PXX22-XX22-130708192104-S5K6_BZDET">Infexn Laboratories Pvt Ltd, Thane West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/National-Institute-Of-Virology-Parel/022P8005897_BZDET">National Institute Of Virology, Parel, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Mumbai/Suburban-Diagnostics-India-Pvt-Ltd-Evershine Nagar-malad West/022PXX22-XX22-200331114527-L1Q6_BZDET">Suburban Diagnostics India Pvt Ltd, Evershine Nagar-malad West, Mumbai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/Shreekalyani-Pathology-Lab-Dhanori/020PXX20-XX20-180801142453-M5L3_BZDET">Shreekalyani Pathology Lab, Dhanori, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Nagpur/Nagpur-Veterinary-College-And-Hospital-Seminary Hills/0712PX712-X712-200420125221-S2V8_BZDET">Nagpur Veterinary College And Hospital, Seminary Hills, Nagpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Sangli/Government-Medical-College-And-Hospital-Miraj/9999PX233-X233-200414130304-E5L4_BZDET">Government Medical College And Hospital, Miraj, Sangli</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Aurangabad-maharashtra/Government-Medical-College-&amp;-Hospital/9999PX240-X240-200407123607-V6P6_BZDET">Government Medical College &amp; Hospital, Aurangabad-maharashtra</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Akola/Government-Medical-College-&amp;-Hospital/9999PX724-X724-200413183822-C6U5_BZDET">Government Medical College &amp; Hospital, Akola</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pune/Armed-Forces-Medical-College-And-Hospital-Wanowrie/020PXX20-XX20-200420123733-H3Z4_BZDET">Armed Forces Medical College And Hospital, Wanowrie, Pune</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Solapur/Dr.-Vaishampayan-Memorial-Government-Medical-College-&amp;--Hospital/9999PX217-X217-200407114516-M9Y9_BZDET">Dr. Vaishampayan Memorial Government Medical College &amp;  Hospital, Solapur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Nagpur/All-INDIA-Institute-Of-Medical-Sciences-(Aiims)/0712PX712-X712-200420124812-S1L6_BZDET">All INDIA Institute Of Medical Sciences (Aiims), Nagpur</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Manipur</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Imphal/Regional-Institute-Of-Medical-Sciences-Lamphelpat/9999P3852-3852-111024190648-Q8X8_BZDET">Regional Institute Of Medical Sciences, Lamphelpat, Imphal</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Imphal/Jawaharlal-Nehru-Institute-Of-Medical-Sciences-Porompat/9999P3852-3852-140308103522-A1K7_BZDET">Jawaharlal Nehru Institute Of Medical Sciences, Porompat, Imphal</a></li>
+                          
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Mizoram </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Aizawl/Mizoram-Institute-Of-Medical-Education-Research-Falkawn/9999PX389-X389-170922125432-U5B6_BZDET">Mizoram Medical College, Aizawl, Mizoram</a></li>
+                        </ul>   
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Odisha  </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Rourkela/Ispat-General-Hospital-Rourkela Sector 19/9999PMULKOLSTD6923_BZDET">Ispat General Hospital, Rourkela Sector 19, Rourkela</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhubaneshwar/All-India-Institute-Of-Medical-Sciences-Patrapada/0674PX674-X674-120831113552-T1R6_BZDET">All India Institute Of Medical Sciences, Patrapada, Bhubaneshwar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhubaneshwar/Apollo-Hospitals-Sainik School/0674PX674-X674-100930143533-K1Q6_BZDET">Apollo Hospitals, Sainik School, Bhubaneshwar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Cuttack/SCB-Medical-College-&amp;-Hospital-Manglabag/0671PX671-X671-180821052141-W9N2_BZDET">SCB Medical College &amp; Hospital, Manglabag, Cuttack</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhubaneshwar/Institute-Of-Life-Sciences-Bhubaneswar/0674PX674-X674-110120124332-K4U5_BZDET">Institute Of Life Sciences, Bhubaneswar, Bhubaneshwar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bhubaneshwar/Regional-Medical-Research-Centre-Nalco Nagar/0674P674STD1212_BZDET">Regional Medical Research Centre, Nalco Nagar, Bhubaneshwar</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Puducherry </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Pondicherry/Jawaharlal-Institute-Of-Post-Graduate-Medical-Education-Research-Gorimedu-Pondicherry-Border-Dhanvantri-Nagar/0413PX413-X413-000719663439-R6E8_BZDET">Jawaharlal Institute of Postgraduate Medical Education &amp; Research, Puducherry</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Punjab </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kozhikode/Aster-MIMS-Calicut-Govindapuram/0495PX495-X495-000346725074-J8Q3_BZDET">Aster MIMS Calicut, Govindapuram, Kozhikode</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ludhiana/Dayanand-Medical-College-&amp;-Hospital-Civil Lines/0161PX161-X161-130715125746-L1U1_BZDET">Dayanand Medical College &amp; Hospital, Civil Lines, Ludhiana</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Faridkot/Guru-Gobind-Singh-Medical-College-&amp;-Hospital/9999P1639-1639-100826091259-L8T9_BZDET">Guru Gobind Singh Medical College &amp; Hospital, Faridkot</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Patiala/Government-Medical-College-New Lal Bagh/9999PX175-X175-180810133341-U8R6_BZDET">Government Medical College, New Lal Bagh, Patiala</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Amritsar/Government-Medical-College-Majitha/0183PX183-X183-101001095643-Q6E1_BZDET">Government Medical College, Majitha, Amritsar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Amritsar/Tuli-Diagnostic-Center-Putligarh/0183PX183-X183-120330235039-I1C2_BZDET">Tuli Diagnostic Center, Putligarh, Amritsar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chandigarh/Institute-Of-Microbial-Technology-Chandigarh Sector 39a/0172P172STD16534_BZDET">Institute Of Microbial Technology, Chandigarh Sector 39a, Chandigarh</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Rajasthan</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jaipur/Sawai-Man-Singh-Hospital-Tonk Road/0141P141STD22180_BZDET">Sawai Man Singh Hospital, Tonk Road, Jaipur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jodhpur/All-INDIA-Institute-Of-Medical-Sciences-Basni/0291PX291-X291-121019114204-D1H3_BZDET">All INDIA Institute Of Medical Sciences, Basni, Jodhpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bikaner/Pbm-Hospital/9999PX151-X151-180425190013-R5V9_BZDET">Pbm Hospital, Bikaner</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jhalawar/Jhalawar-Medical-College-Jhalawar Ho/9999P7432-7432-090703173234-D1N4_BZDET">Jhalawar Medical College, Jhalawar Ho, Jhalawar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jhalawar/S-R-G-Hospital-Mangalpura/9999P7432-7432-180628105713-B7Y7_BZDET">S R G Hospital, Mangalpura, Jhalawar</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Bikaner/Sardar-Patel-Medical-College-Bikaner Ho/9999PMULDELSTD20711_BZDET">Sardar Patel Medical College, Bikaner Ho, Bikaner</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Ajmer/Jawaharlal-Nehru-Medical-College-J L N Hospital/9999PX145-X145-110105145753-R1X9_BZDET">Jawaharlal Nehru Medical College, J L N Hospital, Ajmer</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kota-rajasthan/Government-Medical-College-Kota-Borkheda/9999PX744-X744-140608214729-F4T3_BZDET">Government Medical College Kota, Borkheda, Kota-rajasthan</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jodhpur/Dr.-S-N-Medical-College-Residency Road/0291P291STD80004_BZDET">Dr. S N Medical College, Residency Road, Jodhpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Udaipur-rajasthan/Ravindernath-Tagore-Medical-College-&amp;-Hospital-Udaipur City/9999PX294-X294-120709111951-W1J7_BZDET">Ravindernath Tagore Medical College &amp; Hospital, Udaipur City, Udaipur-rajasthan</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jodhpur/National-Institute-for-Implementation-Research/0291PX291-X291-200420142636-L2B1_BZDET">National Institute for Implementation Research, Jodhpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jaipur/Mahatma-Gandhi-University-of-Medical-Sciences-&amp;-Technology-Sitapura Industrial Area/0141PX141-X141-200416125947-R9D6_BZDET">Mahatma Gandhi University of Medical Sciences &amp; Technology, Sitapura Industrial Area, Jaipur</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Sikkim</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Gangtok/Namgyal-Institute-Of-Tibetology-Gangtok-Gangtok-Bazar/9999PMULKOLSTD40003_BZDET">Sir Thutob Namgyal Memorial (STNM), Gangtok (Collection site only)</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Tamil Nadu</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/Neuberg-Ehrlich-Pvt-Ltd-Royapettah/044PPE02407_BZDET">Neuberg Ehrlich Pvt Ltd, Royapettah, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/Medall-Diagnostics-Ambattur/044PXX44-XX44-161123101108-M9W2_BZDET">Medall Diagnostics, Ambattur, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/David-Labs-And-Scans-Mugalivakkam/044PXX44-XX44-160907125637-Q5E2_BZDET">David Labs And Scans, Mugalivakkam, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Vellore/Christian-Medical-Hospital-Cmc/9999PMULCHNSTD1500006_BZDET">Christian Medical Hospital, Cmc, Vellore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Theni/Theni-Government--Medical-College-&amp;-Hospital-Theni/9999P4546-4546-091031023801-F7B1_BZDET">Theni Government  Medical College &amp; Hospital, Theni, Theni</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kanyakumari/Kanyakumari-Government-Hospital-Asaripallam/9999P4652-4652-110201145033-M2D7_BZDET">Kanyakumari Government Hospital, Asaripallam, Kanyakumari</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Tiruvarur/Government-Hospital-Thiruvarur H O/9999P4366-4366-130316155840-P5K9_BZDET">Government Hospital, Thiruvarur H O, Tiruvarur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Vellore/Government-Vellore-Medical-College-&amp;-Hospital-Adukkamparai/9999PX416-X416-120301175344-L7D6_BZDET">Government Vellore Medical College &amp; Hospital, Adukkamparai, Vellore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Villupuram/Government-Villupuram-Medical-College-And-Hospital-Mundiyampakkam/9999P4146-4146-120731172840-N5L7_BZDET">Government Villupuram Medical College And Hospital, Mundiyampakkam, Villupuram</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thoothukudi/Tuticorin-Government-Hospital-Tuticorin Central Bus Stand/9999PX461-X461-171001084658-G1B6_BZDET">Tuticorin Government Hospital, Tuticorin Central Bus Stand, Thoothukudi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Thanjavur/Government-R-M-Hospital-Thanjavur Ho/9999P4362-4362-090909104333-E5N1_BZDET">Government R M Hospital, Thanjavur Ho, Thanjavur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Tirunelveli/Tirunelveli-Medical-College-Hospital-Palayamkottai High Grounds/0462P462STD1500002_BZDET">Tirunelveli Medical College Hospital, Palayamkottai High Grounds, Tirunelveli</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Madurai/Government-Rajaji-Hospital-Goripalayam/0452PX452-X452-000009219096-D5M6_BZDET">Government Rajaji Hospital, Goripalayam, Madurai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Salem/Government-Mohan-Kumaramangalam-Hospital-Shevapet/0427P427STD1200007_BZDET">Government Mohan Kumaramangalam Hospital, Shevapet, Salem</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Coimbatore/Psg-Hospitals-Peelamedu/0422PX422-X422-110902142413-J5L9_BZDET">Psg Hospitals, Peelamedu, Coimbatore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Coonoor/Pasteur-Institute-Of-India-Pasteur Institute/9999PX423-X423-140316194948-Y6U7_BZDET">Pasteur Institute Of India, Pasteur Institute, Coonoor</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/Miot-Hospitals-Manapakkam/044PDG01275_BZDET">Miot Hospitals, Manapakkam, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/Rajiv-Gandhi-Government-General-Hospital-Park Town/044P3008329_BZDET">Rajiv Gandhi Government General Hospital, Park Town, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Coimbatore/Coimbatore-Medical-College-Hospital-Town Hall/0422P422STD41905_BZDET">Coimbatore Medical College Hospital, Town Hall, Coimbatore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/Hi-Tech-Diagnostic-Centre-Purasawalkam/044PXX44-XX44-130315173432-D6H7_BZDET">Hi-Tech Diagnostic Centre, Purasawalkam, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/KMC-Hospital-Kilpauk/044PCLR20090205IRO3401283914_BZDET">KMC Hospital, Kilpauk, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/King-Institute-Of-Preventive-Medicine-&amp;-Research-Centre-Guindy/044P4006030_BZDET">King Institute Of Preventive Medicine &amp; Research Centre, Guindy, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/YRG-Care-Center-For-Aids-Research-&amp;-Education-Kilpauk/044P3001942_BZDET">YRG Care Center For Aids Research &amp; Education, Kilpauk, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Chennai/National-Institute-Of-Epidemiology-Ayapakkam/044P1226996518A3R8V9_BZDET">National Institute Of Epidemiology, Ayapakkam, Chennai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Coimbatore/Microbiological-Laboratory-Vadavalli/0422PX422-X422-200408183007-T4Z7_BZDET">Microbiological Laboratory, Vadavalli, Coimbatore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Salem/Government-Mohan-Kumaramangalam-Hospital-Shevapet/0427PX427-X427-170924200057-P3A1_BZDET">Government Mohan Kumaramangalam Hospital, Shevapet, Salem</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Perundurai/Government-IRT-Perundurai-Medical-Hospital-Perundurai Sanitorium/9999P4294-4294-200406184345-R4V7_BZDET">Government IRT Perundurai Medical Hospital, Perundurai Sanitorium, Perundurai</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Trichy/KAP-Viswanathan-Government-Medical-Hospital-Puthur/0431PX431-X431-200406165325-A6C6_BZDET">KAP Viswanathan Government Medical Hospital, Puthur, Trichy</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Tripura</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/West Tripura/Agartala-Government-Medical-College-Kunjaban/9999PX381-X381-140316145623-X5F8_BZDET">Agartala Government Medical College, Kunjaban, West Tripura</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Telangana</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Nims-Hospital-Punjagutta/040P57830_BZDET">Nims Hospital, Punjagutta, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Gandhi-Hospital-Musheerabad/040PXX40-XX40-000370799909-K1K6_BZDET">Gandhi Hospital, Musheerabad, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Institute-Of-Preventive-Medicine-Narayanguda/040PXX40-XX40-000753253744-S8F4_BZDET">Institute Of Preventive Medicine, Narayanguda, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Fever-Hospital-Nallakunta/040PXX40-XX40-000702804389-O1Z5_BZDET">Fever Hospital, Nallakunta, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/CSIR-Centre-For-Cellular-&amp;-Molecular-Biology-Habsiguda/040PXX40-XX40-000132452684-P7W1_BZDET">CSIR Centre For Cellular &amp; Molecular Biology, Habsiguda, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Medcis-Pathlabs-India-Pvt-Ltd-New Bowenpally/040PXX40-XX40-130109124139-D3R6_BZDET">Medcis Pathlabs India Pvt Ltd, New Bowenpally, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Centre-For-Dna-Finger-Printing-And-Diagnostics-Uppal/040PXX40-XX40-200123213221-Q3V6_BZDET">Centre For Dna Finger Printing And Diagnostics, Uppal, Hyderabad</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Hyderabad/Biognosys-Technologies-(INDIA)-Pvt-Ltd-Pragathi Nagar-Bachupally/040PXX40-XX40-120824215844-M7C4_BZDET">Biognosys Technologies (INDIA) Pvt Ltd, Pragathi Nagar-Bachupally, Hyderabad</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Uttar Pradesh </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Jaypee-Hospital-Noida Sector 128/011PXX11-XX11-170224162108-R5X6_BZDET">Jaypee Hospital, Noida Sector 128, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Etawah/Uttar-Pradesh-University-Of-Medical-Sciences-Saifai/9999P5688-5688-170605125958-D5Z9_BZDET">Uttar Pradesh University Of Medical Sciences, Saifai, Etawah</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Varanasi/Sir-Sunderlal-Hospital-Lanka/0542PX542-X542-000098936479-U7K6_BZDET">Sir Sunderlal Hospital, Lanka, Varanasi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Lucknow/Sanjay-Gandhi-Post-Graduate-Institute-Of-Medical-Sciences-Rai Bareli Rd Lucknow/0522P522STD23175_BZDET">Sanjay Gandhi Post Graduate Institute Of Medical Sciences, Rai Bareli Rd Lucknow, Lucknow</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Aligarh/J-N-Medical-College-Hospital-Aligarh Muslim University/9999PX571-X571-120128132440-T8R9_BZDET">J N Medical College Hospital, Aligarh Muslim University, Aligarh</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Jhansi/Maharani-Laxmibai-Medical-College-&amp;-Hospital-Kanpur Road/9999P5172-5172-090707112218-S1I8_BZDET">Maharani Laxmibai Medical College &amp; Hospital, Kanpur Road, Jhansi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Lucknow/King-George's-Medical-University-Lucknow Chowk/0522P522STD15247_BZDET">King George's Medical University, Lucknow Chowk, Lucknow</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Meerut/Lala-Lajpat-Rai-Memorial-Medical-College-Meerut City/9999PX121-X121-101103103219-S6X7_BZDET">Lala Lajpat Rai Memorial Medical College, Meerut City, Meerut</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Lucknow/Dr.-Ram-Manohar-Lohia-Institute-Of-Medical-Sciences-Gomti Nagar/0522PX522-X522-091208175615-J7U7_BZDET">Dr. Ram Manohar Lohia Institute Of Medical Sciences, Gomti Nagar, Lucknow</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Agra/Sarojini-Naidu-Medical-College-Mg Road Agra/0562PX562-X562-1233315982L5I5U6-DC_BZDET">Sarojini Naidu Medical College, Mg Road Agra, Agra</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kanpur/Gsvm-Medical-College-Swaroop Nagar/0512P512STD42022_BZDET">Gsvm Medical College, Swaroop Nagar, Kanpur</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Lucknow/Command-Hospital-Lucknow Cantt/0522PX522-X522-121222160428-B5I7_BZDET">Command Hospital, Lucknow Cantt, Lucknow</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/Government-Institute-Of-Medical-Sciences-Greater Noida/011PXX11-XX11-170814083936-R5Z4_BZDET">Government Institute Of Medical Sciences, Greater Noida, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Delhi/National-Institute-Of-Biologicals-Noida Sector 62/011P73650_BZDET">National Institute Of Biologicals, Noida Sector 62, Delhi</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Gorakhpur/ICMR-Regional-Medical-Research-Centre/9999PX551-X551-200416104648-T5F3_BZDET">ICMR Regional Medical Research Centre, Gorakhpur</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> Uttarakhand</a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Rishikesh/Aiims-Hospital-Virbhadra/9999PX135-X135-120901124357-U4X2_BZDET">Aiims Hospital, Virbhadra, Rishikesh</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Dehradun/Dr.-Ahujas-Pathology-&amp;-Imaging-Centre-Karanpur/9999PX135-X135-100723135853-N7W9DC_BZDET">Dr. Ahujas Pathology &amp; Imaging Centre, Karanpur, Dehradun</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Haldwani/Uttarakhand-Government-Medical-College-Haldwani Ho/9999P5946-5946-140719123157-E2F9_BZDET">Uttarakhand Government Medical College, Haldwani Ho, Haldwani</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li class="menu-child">
+                        <a href="#"><i class="fa fa-tachometer"></i> West Bengal </a>
+                        <ul>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/AMRI-Hospitals---Saltlake-Sai Sports Complex/033P50826_BZDET">AMRI Hospitals - Saltlake, Sai Sports Complex, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Midnapore/Midnapore-Medical-College-&amp;-Hospital-Midnapore Ho/9999P3222-3222-100511140350-D2L3DC_BZDET">Midnapore Medical College &amp; Hospital, Midnapore Ho, Midnapore</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Malda/Malda-Medical-College-&amp;-Hospital-Bansbari/9999P3512-3512-130209154113-G2B2_BZDET">Malda Medical College &amp; Hospital, Bansbari, Malda</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Apollo-Gleneagles-Hospital-Kankurgachi/033P400179_BZDET">Apollo Gleneagles Hospital, Kankurgachi, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Siliguri/North-Bengal-Medical-College-&amp;-Hospital-Sushrut Nagar/9999PX353-X353-140729101957-D6W3_BZDET">North Bengal Medical College &amp; Hospital, Sushrut Nagar, Siliguri</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Peerless-Hospital-&amp;-B-K-Roy-Research-Centre-Panchasayar/033PG003721_BZDET">Peerless Hospital &amp; B K Roy Research Centre, Panchasayar, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/S-S-K-M-Hospital-Lala Lajpat Rai Sarani/033P8000306_BZDET">S S K M Hospital, Lala Lajpat Rai Sarani, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Tata-Medical-Center-New Town Action Area 3/033PXX33-XX33-090612114433-K3H8_BZDET">Tata Medical Center, New Town Action Area 3, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/R-G-Kar-Medical-College-&amp;-Hospital-Shyambazar/033P900002_BZDET">R G Kar Medical College &amp; Hospital, Shyambazar, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Calcutta-School-Of-Tropical-Medicine-Chittaranjan Avenue/033P601133_BZDET">Calcutta School Of Tropical Medicine, Chittaranjan Avenue, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Command-Hospital-Alipore/033PXX33-XX33-100216154821-K3X9_BZDET">Command Hospital, Alipore, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Chittaranjan-Cancer-Research-Centre-Kalighat/033P9999808_BZDET">Chittaranjan Cancer Research Centre, Kalighat, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/National-Institute-Of-Cholera-And-Enteric-Diseases-Beliaghata/033P400169_BZDET">National Institute Of Cholera And Enteric Diseases, Beliaghata, Kolkata</a></li>
+                            <li><a target="_blank" class="covid19_anchor" href="https://www.justdial.com/Kolkata/Dr.-Lal-PathLabs-New Town Action Area 1/033PXX33-XX33-200415164136-F5T2_BZDET">Dr. Lal PathLabs, New Town Action Area 1, Kolkata</a></li>
+                        </ul>
+                    </li>
+                    
+                   
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+      
+      
+      
+      
+      
+  </div>
+      <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        <script id="rendered-js">
+  // Side navigation
+  // Dropdown type side navigation (multiple dropdown) for admin dashboard & themes
+ 
+  
+  $(document).ready(function () {
+    // prevent page from jumping to top from  # href link
+    $('.menu-parent li.menu-child > a').click(function (e) {
+      e.preventDefault();
+    });
+  
+    // remove link from menu items that have children
+    $(".menu-parent li.menu-child > a").attr("href", "#");
+  
+    //  function to open / close menu items
+    $(".menu-parent a").click(function () {
+      var link = $(this);
+      var closest_ul = link.closest("ul");
+      var parallel_active_links = closest_ul.find(".active");
+      var closest_li = link.closest("li");
+      var link_status = closest_li.hasClass("active");
+      var count = 0;
+  
+      closest_ul.find("ul").slideUp(function () {
+        if (++count == closest_ul.find("ul").length)
+        parallel_active_links.removeClass("active");
+      });
+  
+      if (!link_status) {
+        closest_li.children("ul").slideDown();
+        closest_li.addClass("active");
+      }
+    });
+  });
+  //# sourceURL=pen.js
+      </script>
+  
+    
+  
+  
+  
+  
+   
+  </body>
+
+
+
+</html>
